@@ -1,5 +1,5 @@
 {
-  "name": "@lastcallmedia/relay-agent-phpunit",
+  "name": "lastcallmedia/relay-agent-phpunit",
   "type": "library",
   "description": "Basic classes for Report Portal collaboration with PHPUnit",
   "keywords": [
