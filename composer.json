@@ -1,23 +1,29 @@
 {
-  	"name": "reportportal/phpunit",
-	"type" : "library",
-	"description" : "Basic classes for Report Portal collaboration with PHPUnit",
-	"keywords" : [
-		"Report",
-		"Reporting",
-		"PHPUnit",
-		"Report Portal"
-	],
-	"homepage" : "https://github.com/Mikalai-Kabzar/client-php",
-	"license" : "MIT",
-	"authors" : [{
-			"name" : "Kabzar Mikalai",
-			"email" : "loki.engine@mail.ru",
-			"role" : "Developer"
-		}
-	],
-  	"require": {
-    	"phpunit/phpunit": "^9.5",
-	"reportportal/basic" : "1.0.x-dev"
+  "name": "lastcallmedia/relay-agent-phpunit",
+  "type": "library",
+  "description": "Basic classes for Report Portal collaboration with PHPUnit",
+  "keywords": [
+    "Report",
+    "Reporting",
+    "PHPUnit",
+    "Report Portal"
+  ],
+  "homepage": "https://github.com/LastCallMedia/agent-php-PHPUnit",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Luke Ollett",
+      "email": "luke@lastcallmedia.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Nazmul Huda",
+      "email": "nazmul.huda@lastcallmedia.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "^9.5",
+    "reportportal/basic": "1.0.x-dev"
   }
 }
