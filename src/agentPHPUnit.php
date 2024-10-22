@@ -111,9 +111,9 @@ class agentPHPUnit implements Framework\TestListener
      * @param $logLevelsEnum
      * @param $testItemID
      */
-    private function addSetOfLogMessages(PHPUnit\Framework\Test $test, PHPUnit\Framework\Exception $e, $logLevelsEnum, $testItemID)
+    private function addSetOfLogMessages(PHPUnit\Framework\Test $test, \Throwable $e, $logLevelsEnum, $testItemID)
     {
-        $errorMessage = $e->toString();
+        $errorMessage = $e->getMessage();
         self::$httpService->addLogMessage($testItemID, $errorMessage, $logLevelsEnum);
 
         $this->AddLogMessages($test, $e, $logLevelsEnum, $testItemID);
@@ -128,7 +128,7 @@ class agentPHPUnit implements Framework\TestListener
      * @param $logLevelsEnum
      * @param $testItemID
      */
-    private function AddLogMessages(PHPUnit\Framework\Test $test, PHPUnit\Framework\AssertionFailedError $e, $logLevelsEnum, $testItemID)
+    private function AddLogMessages(PHPUnit\Framework\Test $test, \Throwable $e, $logLevelsEnum, $testItemID)
     {
         $className = get_class($test);
         $traceArray = $e->getTrace();

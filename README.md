@@ -22,7 +22,7 @@ Use as an example: https://github.com/Mikalai-Kabzar/phpUnit-test-framework/blob
 
 ```
     <listeners>
-        <listener class="agentPHPUnit" file="vendor/reportportal/phpunit/src/agentPHPUnit.php">
+        <listener class="agentPHPUnit" file="vendor/lastcall/relay-agent-phpunit/src/agentPHPUnit.php">
             <arguments>
                 <string>25667b03-8760-469f-ad41-fc0b9c4b67fa</string>
                 <string>https://rp.epam.com</string>
